@@ -29,6 +29,7 @@ body {
     color: var(--text-primary);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     /* Flexbox 居中布局 */
     justify-content: center;
     align-items: center;
@@ -111,7 +112,11 @@ body {
     max-width: 500px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
+
 }
+
+
+
 
 /* 搜索区域 */
 .search-section {
@@ -139,6 +144,7 @@ body {
 }
 
 #city-input {
+    /* margin-top: 10rem; */
     flex: 1;
     background: transparent;
     border: none;
@@ -208,6 +214,16 @@ body {
 }
 
 /* 主要天气内容 */
+
+#weather-content {
+    /* 移除可能存在的 `text-align: center;` 或调整宽度 */
+    width: 90%;
+    max-width: 500px;
+    /*保证和上一容器宽度一致*/
+}
+
+
+
 .current-weather {
     text-align: center;
     margin-bottom: 2rem;
